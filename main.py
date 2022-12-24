@@ -6,3 +6,4 @@ def mane_function (a1, b1):
     else:
         return b1
 print("Більше число - ", mane_function(a, b))
+print("Квадрат числа - ", mane_function(a, b) * mane_function(a, b))
