@@ -1,5 +1,5 @@
-a = int (input("Введіть значення А"))
-b = int (input("Введіть значення Б"))
+a = int (input("Введіть зн A"))
+b = int (input("Введіть зн Б"))
 def mane_function (a1, b1):
     if a1 > b1:
         return a1
