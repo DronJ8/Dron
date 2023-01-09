@@ -21,5 +21,5 @@ def Monat(num):
     except NameError as nerr:
         print(nerr, "введіть коректне значення1")
 
-m = Monat([1,2,3])
+m = Monat([1,2,3,23])
 print(m)
