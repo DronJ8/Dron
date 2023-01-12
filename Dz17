@@ -1,0 +1,16 @@
+#1
+SELECT count(distinct(JOB_ID)) FROM employees;
+#якщо я правильно зрозуміла завдання
+
+#2
+SELECT avg(SALARY) as Average_salary, count(EMPLOYEE_ID) as Number_of_employees from employees where DEPARTMENT_ID = 90;
+#3
+
+select  distinct(jobs.JOB_TITLE) as JOB, count(EMPLOYEE_ID) as Number_of_employees from employees left join jobs on employees.JOB_ID=jobs.JOB_ID group by jobs.JOB_TITLE
+
+#4
+select LAST_NAME, JOB_ID, DEPARTMENT_ID from employees where DEPARTMENT_ID = "40"
+
+#5
+select LAST_NAME, JOB_ID, DEPARTMENT_ID from employees where DEPARTMENT_ID in (SELECT departments.DEPARTMENT_ID from departments left join locations on departments.LOCATION_ID=locations.LOCATION_ID
+where locations.CITY = "London")
